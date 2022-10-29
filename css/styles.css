@@ -34,7 +34,8 @@ body {
 
 /* Logo */
 
-.link, .logo {
+.link,
+.logo {
     text-decoration: none;
 }
 
@@ -53,7 +54,7 @@ body {
     color: var(--primary-text-color);
 }
 
-.site-nav .link:hover, 
+.site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
 }
@@ -62,7 +63,7 @@ body {
 /* Auth nav */
 
 .auth-nav .link {
-    color:var(--secondary-text-color);
+    color: var(--secondary-text-color);
 
 }
 
@@ -78,19 +79,21 @@ body {
     color: var(--white-text);
     background: var(--primary-bgc);
 }
+
 .button {
     color: var(--white-text);
     background: var(--accent-color);
-    font-family: 'Roboto';
-    font-style: normal;
 
 }
-
-.button:hover,
-.button:focus {
-
+.filter {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-bgc)
 }
-
+.filter:hover,
+.filter:focus {
+    color: var(--white-text);
+    background: var(--accent-color);
+}
 
 
 /* Feature*/
@@ -108,8 +111,9 @@ body {
 /* Section */
 
 .section {
-    color:var(--primary-text-color) ;
+    color: var(--primary-text-color);
 }
+
 .team {
     background-color: var(--secondary-bgc);
 
@@ -138,11 +142,9 @@ body {
 }
 
 
-
-
 /* Footer */
 
-.footer{
+.footer {
     background-color: var(--primary-bgc);
 
 }
@@ -154,15 +156,22 @@ body {
 .address {
     font-style: normal;
 }
-.address-text {
-    color: var(--white-text);}
 
-.footer-tel, .footer-mail {
+.address-text {
+    color: var(--white-text);
+}
+
+.footer-tel,
+.footer-mail {
     color: var(--address-text);
 }
-.footer-mail:hover, .footer-mail:focus{
+
+.footer-mail:hover,
+.footer-mail:focus {
     color: var(--accent-color);
 }
-.footer-tel:hover, .footer-tel:focus {
-color: var(--accent-color);
+
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--accent-color);
 }
