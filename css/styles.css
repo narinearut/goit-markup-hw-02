@@ -18,6 +18,7 @@
     --secondary-bgc: rgba(245, 244, 250, 1);
     --white-text: rgba(255, 255, 255, 1);
     --address-text: rgba(255, 255, 255, 0.6);
+    --black-logo: rgba(0, 0, 0, 1);
 }
 
 
@@ -25,6 +26,8 @@
 body {
     background-color: var(--white-text);
     color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
 }
 
 .list {
@@ -39,16 +42,31 @@ body {
     text-decoration: none;
 }
 
-.logo .web {
+.logo, .web {
+    color: var(--accent-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.logo:hover{
     color: var(--accent-color);
 }
-
 .logo {
-    color: rgba(0, 0, 0, 1);
+    color: var(--black-logo);
 }
 
+/* LINK */
 
 /* Site nav */
+
+.link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
 .site-nav .link {
     color: var(--primary-text-color);
@@ -78,16 +96,39 @@ body {
 .hero .hero-title {
     color: var(--white-text);
     background: var(--primary-bgc);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .button {
     color: var(--white-text);
     background: var(--accent-color);
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
+
+
+/*  Button Portfolio*/
+
 .filter {
     color: var(--primary-text-color);
-    background-color: var(--secondary-bgc)
+    background-color: var(--secondary-bgc);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
 }
 .filter:hover,
 .filter:focus {
@@ -101,19 +142,42 @@ body {
 .feature {
     color: var(--primary-text-color);
 }
+.feature-title{
+    color: var(--primary-text-color);
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
 
 .feature-text {
     color: var(--secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 
 }
+
+
 
 
 /* Section */
 
 .section {
-    color: var(--primary-text-color);
+    
 }
+.section-title {
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 
+}
 .team {
     background-color: var(--secondary-bgc);
 
@@ -121,24 +185,46 @@ body {
 
 .list-item {
     background: var(--white-text);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+
 }
 
 .name {
     color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 .work {
     color: var(--secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
+
+/* Portfolio list */
+
 
 .description {
     color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
 }
 
 .type {
     color: var(--secondary-text-color);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
 
 
@@ -151,6 +237,11 @@ body {
 
 .studio {
     color: var(--white-text);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
 }
 
 .address {
@@ -159,11 +250,19 @@ body {
 
 .address-text {
     color: var(--white-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .footer-tel,
 .footer-mail {
     color: var(--address-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .footer-mail:hover,
