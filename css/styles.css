@@ -34,7 +34,10 @@ body {
     list-style: none;
 }
 
+.list-link{
 
+    text-decoration: none;
+}
 /* Logo */
 
 .link,
@@ -61,7 +64,6 @@ body {
 /* Site nav */
 
 .link{
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -100,7 +102,6 @@ body {
 .hero .hero-title {
     color: var(--white-text);
     background: var(--primary-bgc);
-    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -148,8 +149,6 @@ body {
 }
 .feature-title{
     color: var(--primary-text-color);
-    font-family: 'Roboto',sans-serif;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -157,8 +156,6 @@ body {
 
 .feature-text {
     color: var(--secondary-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 
@@ -174,8 +171,6 @@ body {
 }
 .section-title {
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -194,7 +189,6 @@ body {
 
 .name {
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -203,8 +197,6 @@ body {
 
 .work {
     color: var(--secondary-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -215,7 +207,6 @@ body {
 
 .description {
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -224,8 +215,6 @@ body {
 
 .type {
     color: var(--secondary-text-color);
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -254,8 +243,6 @@ body {
 
 .address-text {
     color: var(--white-text);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -263,8 +250,6 @@ body {
 .footer-tel,
 .footer-mail {
     color: var(--address-text);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
