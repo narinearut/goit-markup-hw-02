@@ -10,6 +10,17 @@
 
 /* другорядний колір фону  rgba(245, 244, 250, 1);*/
 
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --primary-text-color: rgba(33, 33, 33, 1);
     --secondary-text-color: rgba(117, 117, 117, 1);
@@ -32,18 +43,37 @@ body {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, ul   q {
+    margin: 0;
+    padding: 0;
 }
 
 .list-link{
-
+    display: inline-block;
     text-decoration: none;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
 /* Logo */
 
 .link,
 .logo {
     text-decoration: none;
 }
+
+
 
 .logo, .web {
     color: var(--accent-color);
@@ -57,7 +87,9 @@ body {
 }
 .logo {
     color: var(--black-logo);
+
 }
+
 
 /* LINK */
 
@@ -76,6 +108,7 @@ body {
 
 .site-nav .link {
     color: var(--primary-text-color);
+    margin-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -89,6 +122,8 @@ body {
 .auth-nav .link {
     color: var(--secondary-text-color);
 
+    margin-bottom: 32px;
+
 }
 
 .auth-nav .link:hover,
@@ -99,9 +134,9 @@ body {
 
 /* Hero */
 
-.hero .hero-title {
+.hero, .hero-title {
     color: var(--white-text);
-    background: var(--primary-bgc);
+    /* background: var(--primary-bgc); */
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -110,23 +145,49 @@ body {
     text-transform: uppercase;
 }
 
+.hero-title {
+    margin-bottom: 30px;
+}
+
+.hero {
+    height: 600px;
+    left: 0px;
+    right: 0px;
+    background: var(--primary-bgc);
+
+    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .button {
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 216px;
+    /* margin-bottom: 294px; */
+
     color: var(--white-text);
     background: var(--accent-color);
+
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px solid transparent;
 }
 
 
 /*  Button Portfolio*/
 
 .filter {
+    display: inline-block;
+    padding: 6px 25px;
+    min-width: 73px;
     color: var(--primary-text-color);
     background-color: var(--secondary-bgc);
     font-family: 'Roboto', sans-serif;
@@ -134,7 +195,10 @@ body {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    border-radius: 4px;
+    border: 1px solid transparent;
 }
+
 .filter:hover,
 .filter:focus {
     color: var(--white-text);
@@ -152,6 +216,8 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 
 .feature-text {
@@ -176,10 +242,23 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
+    margin-bottom: 50px;
+
 }
+
+.img-box {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .team {
     background-color: var(--secondary-bgc);
 
+}
+
+.team-box {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .list-item {
@@ -226,6 +305,11 @@ body {
 .footer {
     background-color: var(--primary-bgc);
 
+}
+
+.footer-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .studio {
